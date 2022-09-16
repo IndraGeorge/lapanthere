@@ -7,10 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none !important;
 }
 
 a:hover {
@@ -328,6 +328,7 @@ a:hover {
     font-size: 16px;
 }
 
+
 .navbar-nav .open .dropdown-menu>li>a {
     text-align: inherit;
 }
@@ -361,6 +362,7 @@ a:hover {
     position: relative;
     z-index: 2;
 }
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -666,7 +668,7 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 38px !important;
 }
 
 .hero-bloc-text-sub {
@@ -690,19 +692,20 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    font-size: 16px !important;
 }
 
 .col-md-offset-2 p {
 
     font-size: 18px;
-    font-style:italic;
-    width:70%;
-    margin-left:15%;
+    font-style: italic;
+    width: 70%;
+    margin-left: 15%;
 }
 
-.col-md-offset-2 p:nth-child(2){
+.col-md-offset-2 p:nth-child(2) {
 
-    font-style:normal;
+    font-style: normal;
 }
 
 .h1 {
@@ -727,12 +730,15 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
-    width: 70%;
-    margin-left: 15%;
+}
+
+h2#agence {
+
+    margin: 30px;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333 !important;
@@ -752,6 +758,7 @@ h4 {
     color: #333333 !important;
 }
 
+
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -763,6 +770,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-row {
@@ -800,9 +809,20 @@ h4 {
     color: #F3976C !important;
 }
 
+.col-sm-12 .tc-white {
+
+    color: white !important;
+}
+
+.row .tc-white {
+
+    color: white !important;
+    font-size: 22px;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF !important;
+    color: #000000 !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -872,13 +892,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -899,11 +919,6 @@ h4 {
         position: relative;
     }
 
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -913,8 +928,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
