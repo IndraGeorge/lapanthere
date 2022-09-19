@@ -283,9 +283,6 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -806,10 +803,6 @@ h4 {
     color: #F3976C !important;
 }
 
-.col-sm-12 .tc-white {
-
-    color: white !important;
-}
 
 .white-description{
 
@@ -824,7 +817,6 @@ h4 {
 .row .tc-white {
 
     color: white !important;
-    font-size: 22px;
 }
 
 .row .contact .tc-white{
